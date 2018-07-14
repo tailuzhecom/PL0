@@ -1,0 +1,7 @@
+var d;
+begin
+    for d := 1 step 1 until 3 do
+    begin
+        write(d);
+    end;
+end.

@@ -1,0 +1,8 @@
+0 var d;
+1 begin
+4     for d := 1 step 1 until 3 do
+15     begin
+15         write(d);
+18     end;
+19 end.
+===Parsing success!===

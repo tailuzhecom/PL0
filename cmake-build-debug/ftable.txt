@@ -1,0 +1,2 @@
+    1 var   d lev=0 addr=4
+

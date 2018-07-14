@@ -1,0 +1,117 @@
+# 不等号<>
+var a, b;
+begin
+    a := 3;
+    b := 5;
+    if a<>3 then
+        write(a);
+    else
+        write(b);
+end.
+
+# if-else
+var a, d;
+begin
+    a := 1;
+    d := 10;
+    if a > d then
+        write(a);
+    else
+        d *= 10;
+        write(d);
+end.
+
+
+# /= *= test
+var d;
+begin
+    d := 100;
+    d /= 10;
+    write(d);
+    d *= 10;
+    write(d);
+end.
+
+
+# for statement
+var d;
+begin
+    for d := 1 step 1 until 3 do
+    begin
+        write(d);
+    end;
+end.
+
+
+# statement ++ --
+var d;
+begin
+    d := 1;
+    d++;
+    write(d);
+    d--;
+    write(d);
+    ++d;
+    write(d);
+    --d;
+    write(d);
+end.
+
+#　factor ++ --
+var d, a;
+begin
+    d := 1;
+    a := 10;
+    a := ++d;
+    write(a);
+    write(d);
+    a := --d;
+    write(a);
+    write(d);
+    a := d++;
+    write(a);
+    write(d);
+    a := d--;
+    write(a);
+    write(d);
+end.
+
+# real, char类型
+char a;
+real b;
+begin
+    a := 'c';
+    write(a);
+    b := 10.5;
+    write(b);
+end.
+
+#　数组
+var c[10];
+begin
+    c[2] := 2;
+    c[3] := c[2] * 3 + 5;
+    write(c[3]);
+end.
+
+#　注释
+var c[10];
+begin
+    c[2] := 2; /* hello */
+    c[3] := c[2] * 3 + 5;
+    write(c[3]);
+end.
+
+#　过程
+var a;
+procedure add(var b, var c);
+begin
+    write(b);
+    write(c);
+    return b+c;
+end;
+
+begin
+    a := call add(5, 6);
+    write(a);
+end.
